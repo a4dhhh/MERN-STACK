@@ -9,7 +9,7 @@ const ContactModel = new mongoose.Schema({
 
     },
     phone: {
-        type:String,
+        type:Number,
         unique: true,
         required:true
     }
