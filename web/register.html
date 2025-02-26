@@ -1,20 +1,35 @@
+
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Register doc</title>
+    <title>Register</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <div class="navbar">
-        <img src="https://nasccbe.ac.in/wp-content/uploads/2024/12/logo-2.png" alt="logo" class="logo">
-        <ul>
-            <li class="navitems"> <h2>Home</h2></li>
-            <li class="navitems"> <h2>Register</h2></li>
-            <li class="navitems"><h2>Contact</h2></li>
-            
+        <div class="logo-container">
+            <img src="https://nasccbe.ac.in/wp-content/uploads/2024/12/logo-2.png" alt="logo" class="logo">
+        </div>
+        <ul class="nav-links">
+            <a href="./index.html">
+                <li class="nav-items">HOME</li>
+            </a>
+            <a href="./register.html">
+                <li class="nav-items">REGISTER</li>
+            </a>
+            <li class="nav-items">CONTACT</li>
         </ul>
     </div>
-</body>
-</html>
+    <div class="form-container">
+        <form onsubmit="register(event)" class="auth-form">
+            <input type="text" id="name" placeholder="NAME" class="input-field">
+            <input type="number" id="phone" placeholder="PHONE" class="input-field">
+            <input type="email" id="email" class="input-field" placeholder="EMAIL">
+            <input type="password" id="password" class="input-field " placeholder="PASSWORD">
+            <input type="submit" value="Submit" class="input-btn">
+        </form>
+    </div>
